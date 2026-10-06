@@ -93,7 +93,8 @@
     <figure class="paper-figure">
       <img src="https://arxiv.org/html/2510.19215v1/Model_architecture_overall.png" alt="Overall architecture of SFGFusion" loading="lazy">
       <figcaption>
-        SFGFusion contains an image branch, a radar branch, a surface pseudo-point branch, an explicit surface fitting module, and BEV feature fusion with a detection head.
+        SFGFusion contains an image branch, a radar branch, a surface pseudo-point branch, an explicit surface fitting module,<br>
+        and BEV feature fusion with a detection head.
       </figcaption>
     </figure>
   </div>
@@ -105,7 +106,8 @@
     <figure class="paper-figure">
       <img src="https://arxiv.org/html/2510.19215v1/Surface_Fitting_Model.png" alt="Surface fitting model of SFGFusion" loading="lazy">
       <figcaption>
-        Image features, projected radar depth, and instance masks are fused before RoI-based parameter fitting. A lightweight network predicts the coefficients of an object-wise quadratic surface, yielding dense depth within each foreground instance.
+        Image features, projected radar depth, and instance masks are fused before RoI-based parameter fitting.<br>
+        A lightweight network predicts the coefficients of an object-wise quadratic surface, yielding dense depth within each foreground instance.
       </figcaption>
     </figure>
   </div>
@@ -129,24 +131,24 @@
 
     <div class="metric-grid">
       <div class="metric-card">
-        <div class="metric-value">35.57%</div>
+        <div class="metric-value">43.21%</div>
         <div class="metric-label">TJ4DRadSet 3D mAP</div>
-        <div class="metric-delta">+4.34 over baseline</div>
+        <div class="metric-delta">+6.00 over baseline</div>
       </div>
       <div class="metric-card">
-        <div class="metric-value">44.66%</div>
+        <div class="metric-value">48.79%</div>
         <div class="metric-label">TJ4DRadSet BEV mAP</div>
-        <div class="metric-delta">+6.88 over baseline</div>
+        <div class="metric-delta">+5.56 over baseline</div>
       </div>
       <div class="metric-card">
-        <div class="metric-value">55.76%</div>
+        <div class="metric-value">63.15%</div>
         <div class="metric-label">VoD full-area mAP</div>
-        <div class="metric-delta">+5.38 over baseline</div>
+        <div class="metric-delta">+4.19 over baseline</div>
       </div>
       <div class="metric-card">
-        <div class="metric-value">73.77%</div>
+        <div class="metric-value">81.05%</div>
         <div class="metric-label">VoD RoI mAP</div>
-        <div class="metric-delta">+2.18 over baseline</div>
+        <div class="metric-delta">+1.59 over baseline</div>
       </div>
     </div>
 
